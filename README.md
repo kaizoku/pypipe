@@ -16,7 +16,7 @@ Return values are printed to the console.
 Usage
 -----
 
-> % echo BLAARHH | pypipe 'stdin.capitalize()'
-> Blaarhh
-
-
+```
+% echo BLAARHH | pypipe 'stdin.capitalize()'
+Blaarhh
+```
