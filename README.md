@@ -20,3 +20,8 @@ Usage
 % echo BLAARHH | pypipe 'stdin.capitalize()'
 Blaarhh
 ```
+
+
+Installation
+------------
+`pip install git+https://github.com/kaizoku/pypipe`
