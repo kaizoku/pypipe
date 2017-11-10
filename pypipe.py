@@ -7,7 +7,9 @@ from functools import reduce
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-i", action="append", dest="imports", help="module to import")
+    parser.add_argument(
+        "-i", action="append", dest="imports", help="module to import", default=[]
+    )
     parser.add_argument("code", action="append", help="code to execute")
     args = parser.parse_args()
     if not args.code:
@@ -22,3 +24,6 @@ def main():
 
     code = reduce(operator.concat, args.code)
     sys.stdout.write(eval(code))
+
+if __name__ == "__main__":
+    main()
